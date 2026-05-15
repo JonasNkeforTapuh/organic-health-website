@@ -13,14 +13,23 @@ export default function Hero() {
       <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
 
         {/* LEFT CONTENT */}
-        <div className="text-left">
+        <div className="text-center md:text-left">
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-7xl font-bold leading-tight"
+            className="
+text-4xl
+sm:text-5xl
+md:text-7xl
+font-bold
+leading-tight
+text-center
+md:text-left
+mt-8
+"
           >
             Restoring Health,
             <br />

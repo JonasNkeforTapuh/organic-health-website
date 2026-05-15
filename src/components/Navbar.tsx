@@ -63,7 +63,10 @@ export default function Navbar() {
           className="md:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          {menuOpen ? <X size={30} /> : <Menu size={30} />}
+          {menuOpen ? <X size={30} /> : <Menu
+size={30}
+className="text-[#166534]"
+/>}
         </button>
 
       </nav>

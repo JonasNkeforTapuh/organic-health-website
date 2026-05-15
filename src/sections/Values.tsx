@@ -30,7 +30,7 @@ export default function Values() {
 
       <div className="max-w-7xl mx-auto text-center">
 
-        <p className="text-green-700 font-semibold uppercase tracking-widest">
+        <p className="text-green-800 font-semibold uppercase tracking-widest">
           Core Values
         </p>
 
@@ -56,11 +56,15 @@ export default function Values() {
                   <Icon size={32} />
                 </div>
 
-                <h3 className="text-2xl font-semibold mt-6">
+                <h3 className="
+font-bold
+text-xl
+text-[#166534]
+">
                   {value.title}
                 </h3>
 
-                <p className="text-gray-600 mt-4 leading-relaxed">
+                <p className="text-gray-700 mt-4 leading-relaxed">
                   {value.description}
                 </p>
               </motion.div>

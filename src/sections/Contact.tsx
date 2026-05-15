@@ -12,7 +12,8 @@ export default function Contact() {
 
         {/* TITLE */}
         <div className="text-center">
-          <p className="uppercase tracking-widest text-[#166534] font-semibold">
+
+          <p className="uppercase tracking-widest text-[#166534] font-bold text-lg">
             Contact Us
           </p>
 
@@ -20,73 +21,177 @@ export default function Contact() {
             Get In Touch With Us
           </h2>
 
-          <p className="mt-6 text-lg text-gray-600">
+          <p className="mt-6 text-lg text-gray-700 max-w-2xl mx-auto">
             We are here to support you. Reach out for partnerships,
-            inquiries, or wellness consultations.
+            inquiries, wellness consultations and collaborations.
           </p>
+
         </div>
 
         {/* GRID */}
         <div className="grid md:grid-cols-2 gap-12 mt-16">
 
-          {/* LEFT INFO */}
+          {/* LEFT SIDE */}
           <div className="space-y-8">
 
-            <div className="flex items-center gap-4">
-              <Phone className="text-[#166534]" />
-              <span>+234 0707 2353 176</span>
+            <div className="flex items-center gap-4 text-gray-800 text-lg">
+
+              <div className="bg-green-100 p-3 rounded-full">
+                <Phone
+                  className="text-[#166534]"
+                  size={22}
+                />
+              </div>
+
+              <span className="font-medium">
+                +234 0707 2353 176
+              </span>
+
             </div>
 
-            <div className="flex items-center gap-4">
-              <Mail className="text-[#166534]" />
-              <span>organicstemcellhealthandwealth@gmail.com</span>
+
+            <div className="flex items-center gap-4 text-gray-800 text-lg">
+
+              <div className="bg-green-100 p-3 rounded-full">
+                <Mail
+                  className="text-[#166534]"
+                  size={22}
+                />
+              </div>
+
+              <span className="font-medium break-all">
+                organicstemcellhealthandwealth@gmail.com
+              </span>
+
             </div>
 
-            <div className="flex items-center gap-4">
-              <MapPin className="text-[#166534]" />
-              <span>Cameroon / Nigeria Operations Center</span>
+
+            <div className="flex items-center gap-4 text-gray-800 text-lg">
+
+              <div className="bg-green-100 p-3 rounded-full">
+                <MapPin
+                  className="text-[#166534]"
+                  size={22}
+                />
+              </div>
+
+              <span className="font-medium">
+                Cameroon / Nigeria Operations Center
+              </span>
+
             </div>
 
-            {/* WHATSAPP BUTTON */}
+
+            {/* WhatsApp */}
+
             <a
               href="https://wa.me/237653774362"
               target="_blank"
-              className="inline-flex items-center gap-3 bg-[#16a34a] text-white px-6 py-3 rounded-full hover:bg-[#166534] transition"
+              rel="noopener noreferrer"
+              className="
+              inline-flex
+              items-center
+              gap-3
+              bg-[#16a34a]
+              text-white
+              px-8
+              py-4
+              rounded-full
+              hover:bg-[#166534]
+              hover:scale-105
+              transition-all
+              duration-300
+              shadow-lg
+              "
             >
-              <MessageCircle size={18} />
+
+              <MessageCircle size={20} />
+
               Chat on WhatsApp
+
             </a>
 
           </div>
 
-          {/* RIGHT SIDE (OPTIONAL FORM) */}
-          <div className="bg-white p-8 rounded-3xl shadow-lg">
 
-            <form className="space-y-4">
+          {/* RIGHT FORM */}
+
+          <div className="bg-white p-8 rounded-3xl shadow-xl">
+
+            <form className="space-y-5">
 
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full p-3 border rounded-xl"
+                className="
+                w-full
+                border
+                border-gray-300
+                rounded-xl
+                px-5
+                py-4
+                text-gray-900
+                placeholder:text-gray-500
+                focus:outline-none
+                focus:ring-2
+                focus:ring-[#16a34a]
+                "
               />
 
               <input
                 type="email"
                 placeholder="Your Email"
-                className="w-full p-3 border rounded-xl"
+                className="
+                w-full
+                border
+                border-gray-300
+                rounded-xl
+                px-5
+                py-4
+                text-gray-900
+                placeholder:text-gray-500
+                focus:outline-none
+                focus:ring-2
+                focus:ring-[#16a34a]
+                "
               />
 
               <textarea
                 placeholder="Your Message"
                 rows={5}
-                className="w-full p-3 border rounded-xl"
+                className="
+                w-full
+                border
+                border-gray-300
+                rounded-xl
+                px-5
+                py-4
+                text-gray-900
+                placeholder:text-gray-500
+                focus:outline-none
+                focus:ring-2
+                focus:ring-[#16a34a]
+                "
               ></textarea>
 
               <button
                 type="button"
-                className="w-full bg-[#166534] text-white py-3 rounded-xl hover:bg-[#14532d] transition"
+                className="
+                w-full
+                bg-[#166534]
+                text-white
+                py-4
+                rounded-xl
+                hover:bg-[#14532d]
+                hover:scale-[1.02]
+                transition-all
+                duration-300
+                font-semibold
+                "
               >
+
                 Send Message
+
               </button>
 
             </form>

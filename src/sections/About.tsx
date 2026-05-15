@@ -15,7 +15,13 @@ export default function About() {
   {/* LEFT SIDE */}
   <div>
 
-    <p className="uppercase tracking-widest text-[#166534] font-semibold">
+    <p className="
+uppercase
+tracking-widest
+text-[#166534]
+font-bold
+text-lg
+">
       About Us
     </p>
 
@@ -23,14 +29,24 @@ export default function About() {
       Transforming Lives Through Wellness & Empowerment
     </h2>
 
-    <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+    <p className="
+mt-6
+text-lg
+text-gray-700
+leading-relaxed
+">
       Organic Stemcell Health & Wealth Ltd is committed
       to restoring lives through trusted organic health
       solutions while creating sustainable opportunities
       for empowerment and prosperity.
     </p>
 
-    <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+    <p className="
+mt-6
+text-lg
+text-gray-700
+leading-relaxed
+">
       Through innovation, integrity, and excellence,
       we continue to impact individuals, families,
       and communities positively across Nigeria and beyond.

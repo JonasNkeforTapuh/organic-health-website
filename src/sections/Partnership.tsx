@@ -98,8 +98,8 @@ export default function Partnership() {
   href="/partnership"
   className="
   inline-block
-  bg-[#166534]
-  text-white
+  bg-[#facc15]
+  text-black
   px-8
   py-4
   rounded-full

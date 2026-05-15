@@ -28,28 +28,27 @@ export default function Navbar() {
 
         {/* Logo */}
         
-
   <div className="flex items-center gap-3">
 
-<Image
-src={logo}
-alt="Logo"
-width={55}
-height={55}
-/>
+  <Image
+    src={logo}
+    alt="Logo"
+    width={50}
+    height={50}
+    className="h-auto w-auto"
+  />
 
-<h1
-className="
-text-xl
-md:text-2xl
-font-extrabold
-text-[#14532d]
-leading-tight
-"
->
-ORGANIC STEMCELL
-HEALTH & WEALTH LTD
-</h1>
+  <h1
+    className="
+    text-base
+    md:text-lg
+    font-bold
+    text-[#14532d]
+    "
+  >
+    ORGANIC STEMCELL HEALTH & WEALTH LTD
+  </h1>
+
 
   </div>
 

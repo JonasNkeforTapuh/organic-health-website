@@ -35,7 +35,10 @@ export default function Navbar() {
     alt="Logo"
     width={50}
     height={50}
-    className="h-auto w-auto"
+    className="
+              rounded-full
+              object-cover
+              "
   />
 
   <h1
@@ -46,7 +49,8 @@ export default function Navbar() {
     text-[#14532d]
     "
   >
-    ORGANIC STEMCELL HEALTH & WEALTH LTD
+    ORGANIC STEMCELL 
+    HEALTH & WEALTH LTD
   </h1>
 
 

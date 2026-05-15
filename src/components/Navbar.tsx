@@ -31,7 +31,7 @@ export default function Navbar() {
   src={logo}
   alt="Company Logo"
   width={80}
-  height={50}
+  height={30}
   className="h-auto w-auto"
 />
 

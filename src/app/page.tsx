@@ -27,10 +27,10 @@ export default function Home() {
       <Services />
       <Stats />
       <Gallery />
-      <Contact />
       <Testimonials />
-      <Videos />
       <VideoTestimonials />
+      <Videos />
+      <Contact />
       <Footer />
       <WhatsAppButton />
     </main>

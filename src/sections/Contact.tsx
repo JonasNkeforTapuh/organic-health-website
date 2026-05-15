@@ -1,19 +1,40 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_klka50j",
+        "template_5kr7u7q",
+        form.current!,
+        "1HMQBKi2Acbxd_N15"
+      )
+      .then(() => {
+        alert("Message sent successfully ✅");
+        form.current?.reset();
+      })
+      .catch(() => {
+        alert("Failed to send message. Try again.");
+      });
+  };
+
   return (
-    <section
-      id="contact"
-      className="py-28 px-6 bg-gray-50"
-    >
+    <section id="contact" className="py-28 px-6 bg-gray-50">
+
       <div className="max-w-6xl mx-auto">
 
         {/* TITLE */}
         <div className="text-center">
-
-          <p className="uppercase tracking-widest text-[#166534] font-bold text-lg">
+          <p className="uppercase tracking-widest text-[#166534] font-semibold">
             Contact Us
           </p>
 
@@ -21,185 +42,90 @@ export default function Contact() {
             Get In Touch With Us
           </h2>
 
-          <p className="mt-6 text-lg text-gray-700 max-w-2xl mx-auto">
-            We are here to support you. Reach out for partnerships,
-            inquiries, wellness consultations and collaborations.
+          <p className="mt-6 text-lg text-gray-700">
+            We are here to support you. Reach out for inquiries,
+            partnerships or consultations.
           </p>
-
         </div>
 
         {/* GRID */}
         <div className="grid md:grid-cols-2 gap-12 mt-16">
 
-          {/* LEFT SIDE */}
+          {/* LEFT INFO */}
           <div className="space-y-8">
 
-            <div className="flex items-center gap-4 text-gray-800 text-lg">
-
-              <div className="bg-green-100 p-3 rounded-full">
-                <Phone
-                  className="text-[#166534]"
-                  size={22}
-                />
-              </div>
-
-              <span className="font-medium">
-                +234 0707 2353 176
-              </span>
-
+            <div className="flex items-center gap-4 text-gray-700">
+              <Phone className="text-[#166534]" />
+              <span>+234 0707 2353 176</span>
             </div>
 
-
-            <div className="flex items-center gap-4 text-gray-800 text-lg">
-
-              <div className="bg-green-100 p-3 rounded-full">
-                <Mail
-                  className="text-[#166534]"
-                  size={22}
-                />
-              </div>
-
-              <span className="font-medium break-all">
-                organicstemcellhealthandwealth@gmail.com
-              </span>
-
+            <div className="flex items-center gap-4 text-gray-700">
+              <Mail className="text-[#166534]" />
+              <span>organicstemcellhealthandwealth@gmail.com</span>
             </div>
 
-
-            <div className="flex items-center gap-4 text-gray-800 text-lg">
-
-              <div className="bg-green-100 p-3 rounded-full">
-                <MapPin
-                  className="text-[#166534]"
-                  size={22}
-                />
-              </div>
-
-              <span className="font-medium">
-                Cameroon / Nigeria Operations Center
-              </span>
-
+            <div className="flex items-center gap-4 text-gray-700">
+              <MapPin className="text-[#166534]" />
+              <span>Cameroon / Nigeria Operations</span>
             </div>
-
-
-            {/* WhatsApp */}
 
             <a
               href="https://wa.me/237653774362"
               target="_blank"
-              rel="noopener noreferrer"
-              className="
-              inline-flex
-              items-center
-              gap-3
-              bg-[#16a34a]
-              text-white
-              px-8
-              py-4
-              rounded-full
-              hover:bg-[#166534]
-              hover:scale-105
-              transition-all
-              duration-300
-              shadow-lg
-              "
+              className="inline-flex items-center gap-3 bg-[#16a34a] text-white px-6 py-3 rounded-full hover:bg-[#14532d] transition"
             >
-
-              <MessageCircle size={20} />
-
+              <MessageCircle size={18} />
               Chat on WhatsApp
-
             </a>
 
           </div>
 
+          {/* FORM */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="bg-white p-8 rounded-3xl shadow-lg"
+          >
 
-          {/* RIGHT FORM */}
-
-          <div className="bg-white p-8 rounded-3xl shadow-xl">
-
-            <form className="space-y-5">
+            <form ref={form} onSubmit={sendEmail} className="space-y-5">
 
               <input
-                type="text"
+                name="name"
                 placeholder="Your Name"
-                className="
-                w-full
-                border
-                border-gray-300
-                rounded-xl
-                px-5
-                py-4
-                text-gray-900
-                placeholder:text-gray-500
-                focus:outline-none
-                focus:ring-2
-                focus:ring-[#16a34a]
-                "
+                className="w-full border border-gray-300 p-4 rounded-xl text-black placeholder:text-gray-400 focus:ring-2 focus:ring-[#166534]"
               />
 
               <input
-                type="email"
+                name="email"
                 placeholder="Your Email"
-                className="
-                w-full
-                border
-                border-gray-300
-                rounded-xl
-                px-5
-                py-4
-                text-gray-900
-                placeholder:text-gray-500
-                focus:outline-none
-                focus:ring-2
-                focus:ring-[#16a34a]
-                "
+                className="w-full border border-gray-300 p-4 rounded-xl text-black placeholder:text-gray-400 focus:ring-2 focus:ring-[#166534]"
+              />
+
+              <input
+                name="phone"
+                placeholder="Phone (optional)"
+                className="w-full border border-gray-300 p-4 rounded-xl text-black placeholder:text-gray-400 focus:ring-2 focus:ring-[#166534]"
               />
 
               <textarea
-                placeholder="Your Message"
+                name="message"
                 rows={5}
-                className="
-                w-full
-                border
-                border-gray-300
-                rounded-xl
-                px-5
-                py-4
-                text-gray-900
-                placeholder:text-gray-500
-                focus:outline-none
-                focus:ring-2
-                focus:ring-[#16a34a]
-                "
-              ></textarea>
+                placeholder="Your Message"
+                className="w-full border border-gray-300 p-4 rounded-xl text-black placeholder:text-gray-400 focus:ring-2 focus:ring-[#166534]"
+              />
 
               <button
-                type="button"
-                className="
-                w-full
-                bg-[#166534]
-                text-white
-                py-4
-                rounded-xl
-                hover:bg-[#14532d]
-                hover:scale-[1.02]
-                transition-all
-                duration-300
-                font-semibold
-                "
+                type="submit"
+                className="w-full bg-[#166534] text-white py-3 rounded-xl font-bold hover:bg-[#14532d] transition"
               >
-
                 Send Message
-
               </button>
 
             </form>
 
-          </div>
+          </motion.div>
 
         </div>
-
       </div>
     </section>
   );

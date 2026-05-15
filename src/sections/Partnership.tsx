@@ -94,9 +94,25 @@ export default function Partnership() {
         {/* CTA */}
         <div className="mt-20 text-center">
 
-          <button className="bg-[#facc15] text-black px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition">
-            Become a Strategic Partner
-          </button>
+          <a
+  href="/partnership"
+  className="
+  inline-block
+  bg-[#166534]
+  text-white
+  px-8
+  py-4
+  rounded-full
+  font-bold
+  hover:bg-[#14532d]
+  hover:scale-105
+  transition-all
+  duration-300
+  shadow-lg
+  "
+>
+  Become a Strategic Partner
+</a>
 
         </div>
 

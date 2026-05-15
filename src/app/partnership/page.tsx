@@ -5,13 +5,15 @@ import { Users } from "lucide-react";
 
 export default function PartnershipPage() {
   return (
-    <section className="min-h-screen bg-gradient-to-b from-[#166534] to-[#0f172a] py-20 px-6">
+    <section className="min-h-screen bg-gradient-to-b from-[#166534] via-[#14532d] to-[#0f172a] py-20 px-6">
 
       <div className="max-w-5xl mx-auto">
 
+        {/* HEADER */}
+
         <motion.div
-          initial={{opacity:0,y:30}}
-          animate={{opacity:1,y:0}}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
           className="text-center text-white"
         >
 
@@ -23,7 +25,7 @@ export default function PartnershipPage() {
           <h1 className="
           text-4xl
           md:text-6xl
-          font-bold
+          font-extrabold
           ">
             Become A Strategic Partner
           </h1>
@@ -34,6 +36,7 @@ export default function PartnershipPage() {
           text-green-100
           max-w-2xl
           mx-auto
+          leading-relaxed
           ">
             Join our mission of transforming lives through
             wellness, empowerment and sustainable prosperity.
@@ -42,115 +45,264 @@ export default function PartnershipPage() {
         </motion.div>
 
 
+        {/* FORM CARD */}
+
         <motion.div
-          initial={{opacity:0}}
-          animate={{opacity:1}}
-          transition={{delay:.3}}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: .3 }}
           className="
           bg-white
           rounded-[35px]
-          p-10
+          p-6
+          md:p-10
           mt-16
           shadow-2xl
           "
         >
 
+          <div className="mb-8">
+
+            <h2 className="
+            text-3xl
+            font-bold
+            text-[#14532d]
+            ">
+              Partnership Application Form
+            </h2>
+
+            <p className="
+            text-gray-600
+            mt-3
+            ">
+              Complete the information below and our team
+              will contact you shortly.
+            </p>
+
+          </div>
+
           <form className="space-y-6">
 
             <div className="grid md:grid-cols-2 gap-6">
 
-              <input
-                type="text"
-                placeholder="Full Name"
-                className="border p-4 rounded-2xl"
-              />
+              <div>
+                <label className="block mb-2 font-semibold text-gray-700">
+                  Full Name
+                </label>
 
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="border p-4 rounded-2xl"
-              />
+                <input
+                  type="text"
+                  placeholder="Enter full name"
+                  className="
+                  w-full
+                  border
+                  border-gray-300
+                  p-4
+                  rounded-2xl
+                  text-gray-900
+                  bg-white
+                  placeholder:text-gray-500
+                  focus:outline-none
+                  focus:ring-2
+                  focus:ring-[#166534]
+                  transition
+                  "
+                />
+              </div>
+
+              <div>
+                <label className="block mb-2 font-semibold text-gray-700">
+                  Email Address
+                </label>
+
+                <input
+                  type="email"
+                  placeholder="example@email.com"
+                  className="
+                  w-full
+                  border
+                  border-gray-300
+                  p-4
+                  rounded-2xl
+                  text-gray-900
+                  bg-white
+                  placeholder:text-gray-500
+                  focus:outline-none
+                  focus:ring-2
+                  focus:ring-[#166534]
+                  "
+                />
+              </div>
 
             </div>
 
 
             <div className="grid md:grid-cols-2 gap-6">
 
-              <input
-                type="tel"
-                placeholder="Phone / WhatsApp"
-                className="border p-4 rounded-2xl"
-              />
+              <div>
+
+                <label className="block mb-2 font-semibold text-gray-700">
+                  Phone / WhatsApp
+                </label>
+
+                <input
+                  type="tel"
+                  placeholder="+234..."
+                  className="
+                  w-full
+                  border
+                  border-gray-300
+                  p-4
+                  rounded-2xl
+                  text-gray-900
+                  bg-white
+                  placeholder:text-gray-500
+                  focus:outline-none
+                  focus:ring-2
+                  focus:ring-[#166534]
+                  "
+                />
+              </div>
+
+
+              <div>
+
+                <label className="block mb-2 font-semibold text-gray-700">
+                  Country
+                </label>
+
+                <input
+                  type="text"
+                  placeholder="Country"
+                  className="
+                  w-full
+                  border
+                  border-gray-300
+                  p-4
+                  rounded-2xl
+                  text-gray-900
+                  bg-white
+                  placeholder:text-gray-500
+                  focus:outline-none
+                  focus:ring-2
+                  focus:ring-[#166534]
+                  "
+                />
+              </div>
+
+            </div>
+
+
+            <div>
+
+              <label className="block mb-2 font-semibold text-gray-700">
+                Occupation
+              </label>
 
               <input
                 type="text"
-                placeholder="Country"
-                className="border p-4 rounded-2xl"
+                placeholder="Your occupation"
+                className="
+                w-full
+                border
+                border-gray-300
+                p-4
+                rounded-2xl
+                text-gray-900
+                bg-white
+                placeholder:text-gray-500
+                focus:outline-none
+                focus:ring-2
+                focus:ring-[#166534]
+                "
               />
 
             </div>
 
 
-            <input
-              type="text"
-              placeholder="Occupation"
-              className="
-              w-full
-              border
-              p-4
-              rounded-2xl
-              "
-            />
+            <div>
 
-            <select
-              className="
-              w-full
-              border
-              p-4
-              rounded-2xl
-              "
-            >
-
-              <option>
+              <label className="block mb-2 font-semibold text-gray-700">
                 Partnership Interest Level
-              </option>
+              </label>
 
-              <option>
-                Starter
-              </option>
+              <select
+                className="
+                w-full
+                border
+                border-gray-300
+                p-4
+                rounded-2xl
+                text-gray-900
+                bg-white
+                focus:outline-none
+                focus:ring-2
+                focus:ring-[#166534]
+                "
+              >
 
-              <option>
-                Serious Investor
-              </option>
+                <option>
+                  Select option
+                </option>
 
-              <option>
-                Business Expansion
-              </option>
+                <option>
+                  Starter
+                </option>
 
-            </select>
+                <option>
+                  Serious Investor
+                </option>
+
+                <option>
+                  Business Expansion
+                </option>
+
+              </select>
+
+            </div>
 
 
-            <textarea
-              rows={5}
-              placeholder="Why would you like to partner with us?"
-              className="
-              w-full
-              border
-              p-4
-              rounded-2xl
-              "
-            />
+            <div>
+
+              <label className="block mb-2 font-semibold text-gray-700">
+                Why would you like to partner with us?
+              </label>
+
+              <textarea
+                rows={5}
+                placeholder="Tell us why..."
+                className="
+                w-full
+                border
+                border-gray-300
+                p-4
+                rounded-2xl
+                text-gray-900
+                bg-white
+                placeholder:text-gray-500
+                focus:outline-none
+                focus:ring-2
+                focus:ring-[#166534]
+                "
+              />
+
+            </div>
+
 
             <button
+              type="submit"
               className="
               w-full
               bg-[#166534]
               text-white
               py-5
               rounded-full
+              hover:bg-[#14532d]
               hover:scale-[1.02]
-              transition
+              transition-all
+              duration-300
               font-bold
+              shadow-lg
               "
             >
               Submit Partnership Request

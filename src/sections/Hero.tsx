@@ -45,11 +45,11 @@ mt-8
   className="
   mt-6
   text-lg
-  md:text-2xl
-  text-white
-  font-medium
+  md:text-xl
+  text-green-50
+  font-normal
   leading-relaxed
-  drop-shadow-lg
+  max-w-xl
   "
 >
   Organic wellness solutions for healthier living,

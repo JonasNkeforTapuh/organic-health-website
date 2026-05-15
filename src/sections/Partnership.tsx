@@ -104,7 +104,7 @@ export default function Partnership() {
   py-4
   rounded-full
   font-bold
-  hover:bg-[#14532d]
+  hover:bg-[#facc15]
   hover:scale-105
   transition-all
   duration-300

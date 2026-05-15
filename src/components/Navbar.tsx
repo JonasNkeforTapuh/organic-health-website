@@ -41,17 +41,27 @@ export default function Navbar() {
               "
   />
 
-  <h1
-    className="
-    text-base
-    md:text-lg
-    font-bold
-    text-[#14532d]
-    "
-  >
-    ORGANIC STEMCELL 
-    HEALTH & WEALTH LTD
-  </h1>
+   <div className="leading-tight">
+
+    <h1 className="
+      text-sm
+      md:text-lg
+      font-extrabold
+      text-[#166534]
+    ">
+      ORGANIC STEMCELL
+    </h1>
+
+    <p className="
+      text-xs
+      md:text-sm
+      font-bold
+      text-[#14532d]
+    ">
+      HEALTH & WEALTH LTD
+    </p>
+
+  </div>
 
 
   </div>

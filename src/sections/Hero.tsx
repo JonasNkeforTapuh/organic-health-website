@@ -39,15 +39,22 @@ mt-8
           </motion.h1>
 
           <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-            className="mt-6 text-lg md:text-2xl text-gray-300"
-          >
-            Organic wellness solutions for healthier living,
-            empowerment, and sustainable prosperity.
-          </motion.p>
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.5 }}
+  className="
+  mt-6
+  text-lg
+  md:text-2xl
+  text-white
+  font-medium
+  leading-relaxed
+  drop-shadow-lg
+  "
+>
+  Organic wellness solutions for healthier living,
+  empowerment, and sustainable prosperity.
+</motion.p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
 

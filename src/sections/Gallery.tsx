@@ -49,34 +49,34 @@ export default function Gallery() {
         <div className="text-center max-w-3xl mx-auto">
 
           <p className="
-          uppercase
-          tracking-widest
-          text-[#166534]
-          font-extrabold
-          text-lg
-          ">
-            Our Gallery
-          </p>
+uppercase
+tracking-widest
+text-[#166534]
+font-extrabold
+text-lg
+">
+  Our Products
+</p>
 
           <h2 className="
-          text-3xl
-          md:text-6xl
-          font-bold
-          mt-4
-          text-gray-900
-          ">
-            Moments of Impact & Transformation
-          </h2>
+text-3xl
+md:text-6xl
+font-bold
+mt-4
+text-gray-900
+">
+  Discover Our Powerful Healing Products
+</h2>
 
           <p className="
-          mt-6
-          text-lg
-          text-gray-700
-          ">
-            Explore highlights from our wellness initiatives,
-            empowerment programs, outreach activities
-            and community engagements.
-          </p>
+mt-6
+text-lg
+text-gray-700
+">
+  Explore our trusted organic and wellness products
+  carefully designed to restore health, promote
+  healing, and improve quality of life.
+</p>
 
         </div>
 

@@ -73,7 +73,7 @@ mt-6
 text-lg
 text-gray-700
 ">
-  Explore our trusted organic and wellness products
+  Explore some of our trusted organic and wellness products
   carefully designed to restore health, promote
   healing, and improve quality of life.
 </p>

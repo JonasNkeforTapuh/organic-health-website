@@ -59,7 +59,7 @@ mt-8
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
 
             <a
-              href="#partnership"
+              href="/partnership"
               className="bg-[#facc15] text-black px-8 py-4 rounded-full font-semibold hover:scale-105 transition inline-block text-center"
             >
               Become a Partner

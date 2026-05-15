@@ -43,7 +43,7 @@ mt-8
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="mt-6 text-lg md:text-2xl text-gray-200"
+            className="mt-6 text-lg md:text-2xl text-gray-300"
           >
             Organic wellness solutions for healthier living,
             empowerment, and sustainable prosperity.

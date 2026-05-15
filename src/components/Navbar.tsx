@@ -27,13 +27,39 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
         {/* Logo */}
-        <Image
-  src={logo}
-  alt="Company Logo"
-  width={80}
-  height={30}
-  className="h-auto w-auto"
-/>
+        <div className="flex items-center gap-3">
+
+  <Image
+    src={logo}
+    alt="Company Logo"
+    width={50}
+    height={50}
+    className="rounded-full object-cover"
+  />
+
+  <div className="leading-tight">
+
+    <h1 className="
+      text-sm
+      md:text-lg
+      font-extrabold
+      text-[#166534]
+    ">
+      ORGANIC STEMCELL
+    </h1>
+
+    <p className="
+      text-xs
+      md:text-sm
+      font-bold
+      text-[#14532d]
+    ">
+      HEALTH & WEALTH LTD
+    </p>
+
+  </div>
+
+</div>
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex gap-8 text-gray-700 font-medium">

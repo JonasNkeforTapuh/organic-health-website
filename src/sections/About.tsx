@@ -3,68 +3,94 @@
 import Image from "next/image";
 import aboutImage from "../images/wellness.jpeg";
 
-
-
 export default function About() {
   return (
-
-    <div
+    <section
       id="about"
-      className="grid md:grid-cols-2 gap-14 items-center"
+      className="py-28 px-6 bg-white"
     >
-  {/* LEFT SIDE */}
-  <div>
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 items-center">
 
-    <p className="
-uppercase
-tracking-widest
-text-[#166534]
-font-bold
-text-lg
-">
-      About Us
-    </p>
+        {/* LEFT */}
 
-    <h2 className="text-4xl md:text-6xl font-bold mt-4 text-gray-900">
-      Transforming Lives Through Wellness & Empowerment
-    </h2>
+        <div>
 
-    <p className="
-mt-6
-text-lg
-text-gray-700
-leading-relaxed
-">
-      Organic Stemcell Health & Wealth Ltd is committed
-      to restoring lives through trusted organic health
-      solutions while creating sustainable opportunities
-      for empowerment and prosperity.
-    </p>
+          <p
+            className="
+            uppercase
+            tracking-widest
+            text-[#166534]
+            font-extrabold
+            text-xl
+            "
+          >
+            About Us
+          </p>
 
-    <p className="
-mt-6
-text-lg
-text-gray-700
-leading-relaxed
-">
-      Through innovation, integrity, and excellence,
-      we continue to impact individuals, families,
-      and communities positively across Nigeria and beyond.
-    </p>
+          <h2
+            className="
+            text-3xl
+            md:text-6xl
+            font-bold
+            mt-4
+            text-gray-900
+            leading-tight
+            "
+          >
+            Transforming Lives Through Wellness & Empowerment
+          </h2>
 
-  </div>
+          <p
+            className="
+            mt-6
+            text-lg
+            text-gray-700
+            leading-loose
+            "
+          >
+            Organic Stemcell Health & Wealth Ltd is committed
+            to restoring lives through trusted organic health
+            solutions while creating sustainable opportunities
+            for empowerment and prosperity.
+          </p>
 
-  {/* RIGHT SIDE IMAGE */}
-  <div className="flex justify-center">
+          <p
+            className="
+            mt-6
+            text-lg
+            text-gray-700
+            leading-loose
+            "
+          >
+            Through innovation, integrity and excellence,
+            we continue impacting individuals, families
+            and communities positively across Nigeria
+            and beyond.
+          </p>
 
-  <Image
-    src={aboutImage}
-    alt="About Image"
-    className="rounded-3xl shadow-2xl w-full max-w-[400px] h-auto object-cover"
-  />
+        </div>
 
-</div>
 
-</div>
+        {/* RIGHT IMAGE */}
+
+        <div className="flex justify-center">
+
+          <Image
+            src={aboutImage}
+            alt="About Image"
+            className="
+            rounded-3xl
+            shadow-2xl
+            w-full
+            max-w-[420px]
+            h-auto
+            object-cover
+            "
+          />
+
+        </div>
+
+      </div>
+    </section>
   );
 }

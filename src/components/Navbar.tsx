@@ -12,13 +12,13 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
- {name:"Home",href:"#home"},
- {name:"About",href:"#about"},
- {name:"Services",href:"#services"},
- {name:"Partnership",href:"#partnership"},
- {name:"Products",href:"#gallery"},
- {name:"Testimonials",href:"#testimonials"},
- {name:"Contact",href:"#contact"},
+ {name:"Home",href:"/"},
+ {name:"About",href:"/#about"},
+ {name:"Services",href:"/#services"},
+ {name:"Partnership",href:"/partnership"},
+ {name:"Products",href:"/products"},
+ {name:"Testimonials",href:"/#testimonials"},
+ {name:"Contact",href:"/#contact"},
 ];
 
   return (
@@ -85,12 +85,12 @@ export default function Navbar() {
         </ul>
 
         {/* Desktop CTA */}
-        <a
-  href="#partnership"
+        <Link
+  href="/partnership"
   className="hidden md:block bg-[#166534] text-white px-5 py-2 rounded-full hover:bg-[#16a34a] transition"
 >
   Join Us
-</a>
+</Link>
         {/* Mobile Menu Button */}
         <button
           className="md:hidden"
@@ -129,12 +129,13 @@ className="text-[#166534]"
                 </Link>
               ))}
 
-              <a
-  href="#partnership"
+              <Link
+  href="/partnership"
+  onClick={() => setMenuOpen(false)}
   className="bg-[#166534] text-white py-3 rounded-full hover:bg-[#16a34a] transition text-center"
 >
   Join Us
-</a>
+</Link>
 
             </div>
 

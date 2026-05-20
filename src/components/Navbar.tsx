@@ -49,7 +49,7 @@ export default function Navbar() {
       font-extrabold
       text-[#166534]
     ">
-      ORGANIC STEMCELL
+      ORGANIC NATURE
     </h1>
 
     <p className="

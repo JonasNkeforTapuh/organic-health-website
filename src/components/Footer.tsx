@@ -1,6 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import Image from "next/image";
-import logo from "../images/logo.jpeg";
+import logo from "../images/logo1.jpeg";
 
 import {
   FaFacebookF,
@@ -38,7 +38,7 @@ export default function Footer() {
               text-[#16a34a]
               text-lg
               ">
-                ORGANIC STEMCELL
+                ORGANIC NATURE
               </h2>
 
               <p className="
@@ -59,7 +59,7 @@ export default function Footer() {
           text-gray-400
           leading-relaxed
           ">
-            Organic Stemcell Health & Wealth Ltd is committed
+            Organic Nature Health & Wealth Ltd is committed
             to restoring lives, promoting healthy living
             and empowering individuals through wellness
             and economic opportunities.
@@ -195,7 +195,7 @@ export default function Footer() {
               />
 
               <span>
-                organicstemcellhealthandwealth@gmail.com
+                organicnaturehealthandwealth@gmail.com
               </span>
 
             </div>
@@ -226,7 +226,7 @@ export default function Footer() {
           <div className="flex gap-4 mt-8">
 
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61590085462574"
               className="
               w-10
               h-10
@@ -302,7 +302,7 @@ export default function Footer() {
       text-gray-500
       ">
 
-        © 2026 Organic Stemcell Health & Wealth Ltd.
+        © 2026 Organic Nature Health & Wealth Ltd.
         All rights reserved.
 
       </div>

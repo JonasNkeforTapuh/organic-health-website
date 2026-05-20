@@ -8,23 +8,26 @@ export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: any) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_klka50j",
-        "template_8w0yj5a",
-        form.current!,
-        "1HMQBKi2Acbxd_N15"
-      )
-      .then(() => {
-        alert("Message sent successfully");
-        form.current?.reset();
-      })
-      .catch(() => {
-        alert("Something went wrong");
-      });
-  };
+  if (!form.current) return;
+
+  emailjs
+    .sendForm(
+      "service_klka50j",
+      "template_8w0yj5a",
+      form.current,
+      "1HMQBKi2Acbxd_N15"
+    )
+    .then(() => {
+      alert("Message sent successfully");
+      form.current?.reset();
+    })
+    .catch((error) => {
+      console.log("EmailJS Error:", error);
+      alert("Something went wrong. Check console.");
+    });
+};
 
   return (
     <section id="contact" className="py-28 px-6 bg-gray-50">
@@ -59,7 +62,7 @@ export default function Contact() {
 
             <div className="flex items-center gap-4 text-gray-800">
               <Mail className="text-[#166534]" />
-              <span>organicstemcellhealthandwealth@gmail.com</span>
+              <span>organicnaturehealthandwealth@gmail.com</span>
             </div>
 
             <div className="flex items-center gap-4 text-gray-800">
@@ -69,7 +72,7 @@ export default function Contact() {
 
             {/* WHATSAPP BUTTON */}
             <a
-              href="https://wa.me/237653774362"
+              href="https://wa.me/2349058836314"
               target="_blank"
               className="inline-flex items-center gap-3 bg-[#16a34a] text-white px-6 py-3 rounded-full hover:bg-[#166534] transition"
             >
